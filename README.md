@@ -23,5 +23,3 @@ A full-stack personal portfolio web application built using Flask, showcasing my
 - **Tools:** Git, VS Code
 
 ---
-
-## 📁 Project Structure
