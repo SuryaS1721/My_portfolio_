@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h4>👋 Hi, I’m</h4>
+            <h1>Injarapu Surya Subrahmanyam</h1>
+            <h2 class="typing-text">Python Developer</h2>
+            <p>I build scalable backend systems and data-driven applications using Python and modern web technologies.
+                Passionate about clean code, problem-solving, and building efficient software solutions.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+    <img src="{{ url_for('static', filename='images/surya.jpeg') }}" 
+         alt="Surya Photo" 
+         class="profile-img">
+</div>
+
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a motivated Python Developer with a strong foundation in programming, data structures, and
+                    backend development. I have hands-on experience building web applications using Flask, REST APIs,
+                    and MySQL.</p>
+                <p>During my academic journey, I worked on real-time data processing and anomaly detection systems,
+                    where I handled structured JSON and CSV datasets and built optimized data pipelines.</p>
+                <p>I am currently seeking an entry-level Python Developer role where I can contribute to real-world
+                    projects and grow as a backend engineer.</p>
+
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <div class="tags">
+                        <span>Pencil Art</span>
+                        <span>Emerging Technologies</span>
+                        <span>Learning about new things</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <ul>
+                    <li>Flask</li>
+                    <li>REST APIs</li>
+                    <li>API Design</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Database</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>SQLAlchemy (ORM)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> Concepts</h3>
+                <ul>
+                    <li>OOPS</li>
+                    <li>Data Structures</li>
+                    <li>Exception Handling</li>
+                    <li>Time Complexity</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="card-content">
+                    <h3>Faculty Performance Analysis</h3>
+                    <span class="badge">Hackathon Project</span>
+                    <p>A Flask-based full-stack web application designed to analyze faculty performance using structured
+                        database queries.</p>
+                    <ul class="features">
+                        <li>Backend logic built using Python and MySQL</li>
+                        <li>Structured SQL queries for accurate analysis</li>
+                        <li>Performance metric calculation system</li>
+                        <li>Clean frontend templates using HTML & CSS</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="card-content">
+                    <h3>Fit Pulse – Health Anomaly Detection</h3>
+                    <p>A Python-based fitness data processing and anomaly detection system.</p>
+                    <ul class="features">
+                        <li>Processed JSON and CSV datasets</li>
+                        <li>Built optimized data pipelines</li>
+                        <li>Implemented threshold-based anomaly detection</li>
+                        <li>Improved real-time health data interpretation efficiency</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Data Processing</span>
+                        <span>JSON/CSV</span>
+                        <span>ML Logic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience & Education Section -->
+<section id="experience" class="section bg-light">
+    <div class="container">
+        <div class="timeline-grid">
+            <div class="timeline-column">
+                <h2 class="section-title">Internship Experience</h2>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Infosys Springboard – Virtual Internship</div>
+                    <h3 class="timeline-title">Python Developer Intern</h3>
+                    <p>Worked on Python-based data processing systems. Built structured pipelines for JSON and CSV
+                        datasets. Implemented anomaly detection logic. Debugged and optimized performance for scalable
+                        applications.</p>
+                </div>
+            </div>
+
+            <div class="timeline-column">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 – 2025</div>
+                    <h3 class="timeline-title">Master of Computer Application (MCA)</h3>
+                    <p class="institution">Vignan’s Lara Institute of Technology and Science</p>
+                    <p class="cgpa">CGPA: 8.2</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019 – 2022</div>
+                    <h3 class="timeline-title">B.Sc</h3>
+                    <p class="institution">Sri Chaitanya Degree & PG College</p>
+                    <p class="cgpa">CGPA: 8.1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section">
+    <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Cisco Programming Essentials in Python</h3>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Responsive Web Design Certification</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section bg-dark">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>suryainjurapu1721@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91-9618678136</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/injarapu-suryasubrahmanyam-501870324/" target="_blank">View
+                            Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="{{ url_for('contact') }}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
